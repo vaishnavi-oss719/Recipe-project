@@ -36,7 +36,7 @@ const handleLogin = () => {
           <input
             type="email"
             placeholder="Email"
-            className="w-full py-3 px-4 rounded-full text-black outline-none"
+            className="w-full py-3 px-4 rounded-full text-black outline-none bcakgroundcolor-white"
           />
 
           <input
