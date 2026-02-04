@@ -36,13 +36,13 @@ const handleLogin = () => {
           <input
             type="email"
             placeholder="Email"
-            className="w-full py-3 px-4 rounded-full text-black outline-none bcakgroundcolor-white"
+            className="w-full py-3 px-4 rounded-full text-black outline-none bg-[#1c1c2e] "
           />
 
           <input
             type="password"
             placeholder="Password"
-            className="w-full py-3 px-4 rounded-full text-black outline-none"
+            className="w-full py-3 px-4 rounded-full text-black outline-none bg-[#1c1c2e] "
           />
 
           {/* <button className="w-full py-3 rounded-full bg-red-500 hover:bg-red-600 transition font-semibold">
