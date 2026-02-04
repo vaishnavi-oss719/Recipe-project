@@ -1,16 +1,158 @@
-# React + Vite
+🍽️ Mini Food World – Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Recipe Application built using React JS and Tailwind CSS, powered by TheMealDB public API.
+Users can explore different kinds of food recipes, view detailed instructions, watch cooking videos, and manage wishlists with a clean black-theme UI.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
 
-## React Compiler
+React JS – Frontend library
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Router DOM – Routing & navigation
 
-## Expanding the ESLint configuration
+Tailwind CSS – Styling & responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fetch API – API requests
+
+React Icons – Icons
+
+TheMealDB API – Recipe data source
+
+API Link:
+👉 https://www.themealdb.com/api.php
+
+✨ Features
+🔐 Authentication UI
+
+Login page for existing users
+
+Signup page for new users
+
+Animated food background
+
+Black theme UI
+
+Redirect to login after signup
+
+⚠️ UI-only authentication (no backend)
+
+🏠 Home / Recipe Listing Page
+
+Displays recipes in 3 rows × 4 columns
+
+Clean recipe cards with image & name
+
+Responsive grid layout
+
+Each card is clickable
+
+🔍 Search & Filter
+
+Search recipes by name
+
+Filter recipes by:
+
+Categories
+
+Meal types
+
+Ingredients (API based)
+
+Search & filter work together
+
+📖 Recipe Details Page
+
+Large recipe image (left side)
+
+Full recipe instructions
+
+Category & meal info
+
+Watch YouTube video button
+
+Wishlist button
+
+Back button for easy navigation
+
+Responsive layout
+
+❤️ Wishlist
+
+Add/remove recipes from wishlist
+
+Heart icon toggle animation
+
+Wishlist state managed globally
+
+Visual feedback when recipe is wishlisted
+
+🧭 Navbar
+
+Sticky navbar (visible on all pages)
+
+Food logo on the left
+
+Icons:
+
+Home
+
+Wishlist
+
+Profile (Login/Logout)
+
+Responsive & clean layout
+
+📱 Responsive Design
+
+Fully responsive for:
+
+Mobile
+
+Tablet
+
+Desktop
+
+Tailwind utility classes used throughout
+
+📂 Project Structure
+src/
+│── components/
+│   ├── Navbar.jsx
+│   ├── RecipeCard.jsx
+│
+│── pages/
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   ├── Home.jsx
+│   ├── RecipeDetails.jsx
+│
+│── App.jsx
+│── main.jsx
+│── index.css
+
+🧪 How to Run Locally
+
+1️⃣ Clone the repository
+
+git clone https://[github.com//recipe-app.git](https://github.com/vaishnavi-oss719/Recipe-project)
+
+
+2️⃣ Go to project folder
+
+cd recipe-app
+
+
+3️⃣ Install dependencies
+
+npm install
+
+
+4️⃣ Start development server
+
+npm run dev
+
+🌐 Deployment
+
+Deployed using Vercel
+
+Continuous deployment via GitHub
