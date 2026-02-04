@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import RecipeCard from "../components/RecipeCard";
-import SearchBar from "../components/Searchbar";
+import SearchBar from "../components/SearchBar";
 import CategoryFilter from "../components/CategoryFilter";
 
 export default function Home() {
