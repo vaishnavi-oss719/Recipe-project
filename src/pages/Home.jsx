@@ -4,7 +4,7 @@ import RecipeCard from "../components/RecipeCard";
 import SearchBar from "../components/SearchBar";
 import CategoryFilter from "../components/CategoryFilter";
 
-export default function Home() {
+export default function Home({ wishlist, toggleWishlist }) {
   const [meals, setMeals] = useState([]);
   const [search, setSearch] = useState("");
   const [categories, setCategories] = useState([]);
@@ -48,22 +48,29 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f0f1a] p-4">
+    <div className="min-h-screen bg-[#0f0f1a] p-4 ">
    
 
-      <div className="my-4">
+      <div className="my-4 ">
         <SearchBar value={search} onChange={searchMeals} />
       </div>
 
-      <CategoryFilter
+      <CategoryFilter 
         categories={categories}
         onSelect={filterByCategory}
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
   {meals?.map((meal) => (
-    <RecipeCard key={meal.idMeal} meal={meal} />
+    <RecipeCard
+      key={meal.idMeal}
+      meal={meal}
+      wishlist={wishlist}
+      toggleWishlist={toggleWishlist}
+    />
   ))}
+
+
   
 </div>
 </div>
